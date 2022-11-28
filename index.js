@@ -51,3 +51,35 @@ io.on("connection", (socket) => {
 
 // SOCKET IO CLIENT CODE
 //  Hello.ejs is the client code for socket io
+
+
+// ####################################### BACKGROUND COLOR CODE
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="box">Some text here</div>
+    <button id="btn">Button</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+//################################### index.js
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+  // 👇️ change background color
+  document.body.style.backgroundColor = 'salmon';
+
+  // 👇️ optionally change text color
+  // document.body.style.color = 'white';
+});
+
+
+// #######################################  
